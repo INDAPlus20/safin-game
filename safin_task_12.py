@@ -10,8 +10,6 @@ def menu():
 
     while True:
 
-        
-
         screen.fill(resetScreen)
         screen.blit(bkgroundImg,(0,0))
 
@@ -71,7 +69,6 @@ def menu():
 #Controls actual game
 def game(mode):
 
-    
     pygame.mixer.music.load('./srcAudio/noMonkey.wav')
     pygame.mixer.music.play(-1)
 
@@ -349,7 +346,6 @@ playerPos.center = (20, screenHeight / 2)
 AITable = pygame.image.load("./srcImages/enemyTable.png")
 AIPos = AITable.get_rect()
 AIPos.center = (screenWidth - 20, screenHeight / 2)
-
 
 singlePlayer = pygame.image.load("./srcImages/singleplayer_button.png")
 multiPlayer = pygame.image.load("./srcImages/2P.png")
